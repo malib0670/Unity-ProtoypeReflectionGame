@@ -17,25 +17,12 @@ public class GameManager : MonoBehaviour
     private int score;
     public bool isGameActive;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void startMethod(int difficulty)
     {
         isGameActive = true;
         score = 0;
         updateScore(0); 
-        spawnRate /= difficulty; 
-                                    
+        spawnRate /= difficulty;                               
     }
 
     IEnumerator spawnTarget() 

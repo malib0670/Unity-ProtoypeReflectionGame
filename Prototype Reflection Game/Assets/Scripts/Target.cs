@@ -9,7 +9,6 @@ public class Target : MonoBehaviour
     private float maxTorque = 50;
     private float xRange = 4;
     private float ySpawnPos = -4;
-
     public int pointValue;
 
     private Rigidbody targetRb;
@@ -25,7 +24,7 @@ public class Target : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        moveUpdate();
+        
     }
 
     public void moveStart()
@@ -38,11 +37,6 @@ public class Target : MonoBehaviour
         targetRb.AddTorque(randomTorque(), randomTorque(), randomTorque()); 
 
         targetRb.transform.position = randomSpawnPos();
-    }
-
-    public void moveUpdate()
-    {
-
     }
 
     private void OnTriggerEnter(Collider other) 

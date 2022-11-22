@@ -31,7 +31,6 @@ public class DifficultyButton : MonoBehaviour
 
     private void setDifficulty()
     {
-        Debug.Log(button.gameObject.name + " was cliced");
         gameManager.startGame(difficulty); 
     }
 }
